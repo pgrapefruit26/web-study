@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ページタイトル</title>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>CloudForge</h1>
+  
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero" id="home">
+      <h2>業務を自動化し、企業の生産性を10倍に</h2>
+      <p>CloudForgeは、営業・顧客管理・レポーティングを一体化した次世代業務SaaSです。AIと自動化で中堅企業の成長を加速させます。</p>
+      <a href="#contact" class="btn">お問い合わせ</a>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>CloudForgeは「業務の摩擦をゼロにする」をミッションに創業されたBtoB SaaS企業です。日本国内500社以上が導入し、平均40%の業務時間削減を実現しています。</p>
+    </section>
+
+    <section id="service">
+      <h2>Service</h2>
+      <p>CloudForgeはCRM・MA・BI・ワークフローを単一基盤で提供し、企業の成長フェーズに合わせてスケールします。</p>
+    </section>
+
+    <section class="cards">
+      <div class="card fade-in">
+        <h3>Service A</h3>
+        <p>営業活動を一元管理し、案件化率を最大35%改善するCRM機能。</p>
+      </div>
+
+      <div class="card fade-in">
+        <h3>Service B</h3>
+        <p>顧客データを自動統合し、部門間のデータ分断を解消。</p>
+      </div>
+
+      <div class="card fade-in">
+        <h3>Service C</h3>
+        <p>AIが売上予測・リスク検知を行い、意思決定を高速化。</p>
+      </div>
+
+      <div class="card fade-in">
+        <h3>Service D</h3>
+        <p>ノーコード自動化で定型業務を最大80%削減。</p>
+      </div>
+
+      <div class="card fade-in">
+        <h3>Service E</h3>
+        <p>リアルタイムダッシュボードで経営指標を可視化。</p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="service">導入3ヶ月でROIを実感</div>
+      <div class="service">エンタープライズレベルのセキュリティ</div>
+      <div class="service">99.99%の稼働率</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>プロダクト資料・料金プランをご希望の方は、以下よりお問い合わせください。</p>
+
+      <form action="#">
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input id="name" type="text" name="name" required>
+        </div>
+        <div class="error-message" id="error-name"></div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div class="error-message" id="error-email"></div>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="error-message" id="error-message"></div>
+
+        <!--スパム対策ハニーポッド-->
+        <input type="text" name="hp" style="display:none">
+
+        <button type="submit">送信</button>
+      </form>
+
+      <p class="success-message"></p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#home" class="back-top">↑ Top</a>
+    
+    <p class="copyright">©︎ 2026 Sample Company</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
