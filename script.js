@@ -69,8 +69,9 @@ form.addEventListener("submit", function(event) {
     }
 
     if(valid) {
-        fetch("https://script.google.com/macros/s/AKfycbxM9cfblFh7pl4t1U0KB7GvJsQjqvJzhmlfnjmZZdKisWWPb16qMQBe2rfE2lgQ32Q/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbxeKt8O8J-I9DzhPyrasUopT_ovv_FAAXj2XNDS7pSPcriQELu3NPJfcAqm-OBwy7c/exec", {
         method: "POST",
+        mode: "no-cors",
         body: new URLSearchParams({
             name: nameInput.value.trim(),
             email: emailInput.value.trim(),
