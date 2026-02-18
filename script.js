@@ -79,14 +79,9 @@ form.addEventListener("submit", function(event) {
             hp: document.querySelector('[name="hp"]').value
         })
         })
-        .then(res => res.text())
-        .then(text => {
-            if(text === "OK") {
-                successMessage.textContent = "送信しました。ありがとうございます！";
-                form.reset();
-            } else {
-                successMessage.textContent = "送信に失敗しました。入力内容を確認してください。";
-            }
+        .then(() => {
+            successMessage.textContent = "送信しました。ありがとうございます！";
+            form.reset();
         })
         .catch(() => {
             successMessage.textContent = "送信に失敗しました。もう一度お試しください。";
