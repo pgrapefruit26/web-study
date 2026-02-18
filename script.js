@@ -69,7 +69,7 @@ form.addEventListener("submit", function(event) {
     }
 
     if(valid) {
-        fetch("https://script.google.com/macros/s/AKfycbzkjxTW3rCXXVYEckvI1DTOJsejOrAOswl5BQdpVrfT_hz17WAmu4Gw62MUiwYQMQ6r/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbzMHZO4jybx_2RHrX4hsi_oRf9Wzv8sMsz0I3lT5k8S6XK6zEq__oLjEm5sI441T34z/exec", {
         method: "POST",
         mode: "no-cors",
         body: new URLSearchParams({
